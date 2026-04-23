@@ -19,7 +19,7 @@ export default function About() {
         <div className={styles.grid}>
           <div className={styles.images}>
             <div className={styles.mainImage}>
-               <Image src="/imagens/about1.png" alt="Salão principal do Ágape" fill style={{objectFit: 'cover', borderRadius: '8px'}} />
+               <Image src="/imagens/hero.png" alt="Salão principal do Ágape" fill style={{objectFit: 'cover', borderRadius: '8px'}} />
             </div>
             <div className={styles.smallImages}>
                <div className={styles.imgWrapper}>
