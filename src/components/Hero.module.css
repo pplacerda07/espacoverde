@@ -1,0 +1,90 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/imagens/imagemparahero.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--branco);
+  text-align: center;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(43, 77, 26, 0.6), rgba(0, 0, 0, 0.5));
+  z-index: 1;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+.heroLogoWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.heroLogo {
+  border-radius: 50%;
+  border: 3px solid var(--branco);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  background-color: var(--branco);
+  padding: 4px; /* Slight padding to make the logo pop inside the frame */
+}
+
+.heroContent h1 {
+  font-size: 5rem;
+  color: var(--branco);
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.slogan {
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+  font-weight: 300;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  line-height: 1.5;
+}
+
+.ctaGroup {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* Modificações específicas para os botões do hero devido ao fundo escuro */
+.heroContent :global(.btn-outline) {
+  border: 2px solid var(--branco);
+  color: var(--verde-escuro);
+  background-color: rgba(255, 255, 255, 0.85);
+  font-weight: bold;
+}
+.heroContent :global(.btn-outline):hover {
+  background-color: var(--branco);
+  color: var(--verde-escuro);
+}
+
+@media (max-width: 768px) {
+  .heroContent h1 {
+    font-size: 3.5rem;
+  }
+  .slogan {
+    font-size: 1.2rem;
+  }
+  .ctaGroup {
+    flex-direction: column;
+  }
+}

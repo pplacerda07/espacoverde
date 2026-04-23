@@ -1,0 +1,100 @@
+.contactContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .contactContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.whatsappCard {
+  background-color: var(--branco);
+  padding: 3.5rem 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.whatsappIconWrapper {
+  width: 80px;
+  height: 80px;
+  background-color: #25D366; /* WhatsApp Green */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+}
+
+.whatsappIcon {
+  font-size: 2.5rem;
+  color: white;
+  line-height: 1;
+}
+
+.whatsappCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--verde-escuro);
+}
+
+.whatsappCard p {
+  line-height: 1.6;
+  color: var(--cinza-carvao);
+  margin-bottom: 2rem;
+}
+
+.wppBtn {
+  background-color: #25D366 !important;
+  font-size: 1.1rem;
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.wppBtn:hover {
+  background-color: #1ebd5a !important;
+}
+
+.mapContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 100%;
+}
+
+.mapInfo {
+  background-color: var(--verde-escuro);
+  color: var(--branco);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.mapInfo h3 {
+  color: var(--branco);
+  margin-bottom: 1rem;
+}
+
+.mapInfo p {
+  line-height: 1.6;
+}
+
+.reference {
+  font-style: italic;
+  color: var(--bege-claro) !important;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
